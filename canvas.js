@@ -1,4 +1,4 @@
-require("./style.css");
+require("./style.scss");
 const canvas = document.querySelector('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
