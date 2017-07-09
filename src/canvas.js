@@ -1,11 +1,16 @@
+require("../devServer.js");
 require("./style.scss");
+
+if (module.hot) {
+	module.hot.accept();
+}
+
 // Initial Setup
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
 
 canvas.width = innerWidth;
 canvas.height = innerHeight;
-
 
 // Variables
 const mouse = {
